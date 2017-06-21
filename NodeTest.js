@@ -19,7 +19,9 @@ function handleRequest(_request, _response) {
     console.log(query);
     var key;
     for (key in query)
-        console.log(key + ":" + query[key]);
+        if (key != "Chocolate" && key != "Vanilla" && key != "Strawberry" && key != "Raspberry" && key != "Bubblegum" && key != "Dark Chocolate" && key != "White Chocolate" && key != "Yogurt" && key != "Kiddy Chocolate" && key != "Banana" && key != "Blueberry" && key != "Toppings" && key != "RadioBoxes" && key != "RadioBoxes2") {
+            _response.write(key + "<br>");
+        }
     _response.setHeader("Access-Control-Allow-Origin", "*");
     _response.setHeader("content-type", "text/html; charset=utf-8");
     _response.write("YOUR ICECREAM <hr>");
