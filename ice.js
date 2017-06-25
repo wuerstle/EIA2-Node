@@ -5,7 +5,6 @@
 //Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 "use strict";
 console.log("Server starting");
-var flavour = ["Chocolate", "Vanilla", "Strawberry", "Raspberry", "Bubblegum", "Dark Chocolate", "White Chocolate", "Yogurt", "Kiddy Chocolate", "Banana", "Blueberry"];
 var Http = require("http");
 var Url = require("url");
 var port = process.env.PORT;
@@ -41,7 +40,6 @@ function handleRequest(_request, _response) {
     _response.write("Kiddy Chocolate:" + query["Kiddy Chocolate"] + "<br>");
     _response.write("Banana:" + query["Banana"] + "<br>");
     _response.write("Blueberry:" + query["Blueberry"] + "<br>");
-    _response.write("<br>");
     _response.write("Your Toppings:" + query["Toppings"] + "<br>");
     _response.write("Your Box:" + query["RadioBoxes"] + "<br>");
     _response.write("Delivery Option:" + query["RadioBoxes2"]);
