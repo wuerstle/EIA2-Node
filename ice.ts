@@ -52,7 +52,7 @@ function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerRes
 //        _response.write("Kiddy Chocolate:" + query["Kiddy Chocolate"] + "<br>");
 //        _response.write("Banana:" + query["Banana"] + "<br>");
 //        _response.write("Blueberry:" + query["Blueberry"] + "<br>");
-        _response.write("Your Flavours:" +query["NumberFlavours" + "<br>"]);
+        _response.write("Your Flavours:" +query["NumberFlavours"] + "<br>");
         _response.write("Your Toppings:" + query["Toppings"] + "<br>");
         _response.write("Your Box:" + query["RadioBoxes"] + "<br>");
         _response.write("Delivery Option:" + query["RadioBoxes2"]);
