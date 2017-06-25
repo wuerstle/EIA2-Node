@@ -18,10 +18,9 @@ function handleRequest(_request, _response) {
     var query = Url.parse(_request.url, true).query;
     console.log(query);
     var key;
-    for (key in query)
-        if (key != "Chocolate" && key != "Vanilla" && key != "Strawberry" && key != "Raspberry" && key != "Bubblegum" && key != "Dark Chocolate" && key != "White Chocolate" && key != "Yogurt" && key != "Kiddy Chocolate" && key != "Banana" && key != "Blueberry" && key != "Toppings" && key != "RadioBoxes" && key != "RadioBoxes2") {
-            _response.write(key + "<br>");
-        }
+    for (key in query) {
+        console.log(key + ":" + query[key]);
+    }
     _response.setHeader("Access-Control-Allow-Origin", "*");
     _response.setHeader("content-type", "text/html; charset=utf-8");
     _response.write("YOUR ICECREAM <hr>");
@@ -41,4 +40,4 @@ function handleRequest(_request, _response) {
     _response.write("Delivery Option:" + query["RadioBoxes2"]);
     _response.end();
 }
-//# sourceMappingURL=NodeTest.js.map
+//# sourceMappingURL=ice.js.map

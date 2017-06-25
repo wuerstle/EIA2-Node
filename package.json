@@ -3,9 +3,9 @@
 	"version" : "0.0.1",
 	"description" : "first node test",
 	"author" : "Lisa Würstle'",
-	"main" : "NodeTest.js",
+	"main" : "ice.js",
 	"scripts" : {
-		"start" : "node NodeTest.js"
+		"start" : "node ice.js"
 	},
 	"engines" : {
 		"node" : "6.10.3"
